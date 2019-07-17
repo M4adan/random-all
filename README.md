@@ -30,7 +30,6 @@ npm install --save random-all
   cycle.
   * **min** : minimum value of random number. Defaults to 1.
   * **max** : maximum value of random number. Defaults to 100.
->>>>>>> 1f2c19ec48bc1760216caaf0f93ebffe32ea49aa
   
   ```javascript
     const random = require('random-all')
@@ -49,7 +48,6 @@ npm install --save random-all
   Returns a random number from (including) `min` to (including) `max`.
   * **min** : minimum value of random number. Defaults to 1.
   * **max** : maximum value of random number. Defaults to 100.
->>>>>>> 1f2c19ec48bc1760216caaf0f93ebffe32ea49aa
   
   ```javascript
     const random = require('random-all')
@@ -67,7 +65,6 @@ npm install --save random-all
   Returns a random number from (including) `min` to (including) `max`.
   * **min** : minimum value of random number. Defaults to 1.
   * **max** : maximum value of random number. Defaults to 100.
->>>>>>> 1f2c19ec48bc1760216caaf0f93ebffe32ea49aa
   
   ```javascript
     const random = require('random-all')
