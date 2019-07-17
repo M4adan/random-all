@@ -1,0 +1,31 @@
+{
+  "name": "random-all",
+  "version": "1.0.4",
+  "description": "Generates random numbers, unique random numbers.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/M4adan/random-all.git"
+  },
+  "keywords": [
+    "random",
+    "unique",
+    "random-array",
+    "unique-random",
+    "random-objects"
+  ],
+  "author": "m4adan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/M4adan/random-all/issues"
+  },
+  "homepage": "https://github.com/M4adan/random-all#readme",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.1.4"
+  }
+}
