@@ -1,6 +1,10 @@
 {
   "name": "random-all",
+<<<<<<< HEAD
   "version": "1.0.4",
+=======
+  "version": "1.0.0",
+>>>>>>> 1f2c19ec48bc1760216caaf0f93ebffe32ea49aa
   "description": "Generates random numbers, unique random numbers.",
   "main": "index.js",
   "scripts": {

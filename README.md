@@ -19,11 +19,19 @@ npm install --save random-all
 ```javascript
   const random = require('random-all')
 ```
+<<<<<<< HEAD
 -  **getUnique(min,max)**
   Returns a unique random number from (including) `min` to (including) `max`.  After all unique value between min and max it will restart
   cycle.
       * **min** : minimum value of random number. Defaults to 1.
       * **max** : maximum value of random number. Defaults to 100.
+=======
+- ### getUnique(min,max)
+  Returns a unique random number from (including) `min` to (including) `max`.  After all unique value between min and max it will restart
+  cycle.
+  * **min** : minimum value of random number. Defaults to 1.
+  * **max** : maximum value of random number. Defaults to 100.
+>>>>>>> 1f2c19ec48bc1760216caaf0f93ebffe32ea49aa
   
   ```javascript
     const random = require('random-all')
@@ -33,10 +41,17 @@ npm install --save random-all
 
   ```
   
+<<<<<<< HEAD
 -  **getInt(min,max)**
   Returns a random number from (including) `min` to (including) `max`.
       * **min** : minimum value of random number. Defaults to 1.
       * **max** : maximum value of random number. Defaults to 100.
+=======
+- ### getInt(min,max)
+  Returns a random number from (including) `min` to (including) `max`.
+  * **min** : minimum value of random number. Defaults to 1.
+  * **max** : maximum value of random number. Defaults to 100.
+>>>>>>> 1f2c19ec48bc1760216caaf0f93ebffe32ea49aa
   
   ```javascript
     const random = require('random-all')
@@ -45,10 +60,17 @@ npm install --save random-all
     let val = random.getInt()// val is between 1 and 100.
 
   ```
+<<<<<<< HEAD
 -  **getFloat(min,max)**
   Returns a random number from (including) `min` to (including) `max`.
       * **min** : minimum value of random number. Defaults to 1.
       * **max** : maximum value of random number. Defaults to 100.
+=======
+- ### getFloat(min,max)
+  Returns a random number from (including) `min` to (including) `max`.
+  * **min** : minimum value of random number. Defaults to 1.
+  * **max** : maximum value of random number. Defaults to 100.
+>>>>>>> 1f2c19ec48bc1760216caaf0f93ebffe32ea49aa
   
   ```javascript
     const random = require('random-all')
