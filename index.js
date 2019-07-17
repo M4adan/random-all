@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 'use strict'
 function getRandomIntInclusive(min, max) {
   min = Math.ceil(min);
@@ -182,5 +181,4 @@ module.exports = new Random();
 
 // for (var i = 0; i < 10; i++) {
 //     console.log(i+1,module.exports.getFloat(0,0));
->>>>>>> 1f2c19ec48bc1760216caaf0f93ebffe32ea49aa
 // }
