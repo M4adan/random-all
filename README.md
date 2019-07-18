@@ -5,7 +5,7 @@ Generates random numbers, unique random numbers
   
   let uniqueValue = random.getUnique(1,10);
   let randomInt = random.getInt(1,10);
-  let randomInt = random.getFloat(1,10);
+  let randomFloat = random.getFloat(1,10);
 ```
 
 ## Installation
