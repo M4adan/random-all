@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha",
-    "start": "node index.js"
+    "start": "node index.js",
+    "eslint":"npx eslint ./lib"
   },
   "repository": {
     "type": "git",
@@ -26,6 +27,7 @@
   "homepage": "https://github.com/M4adan/random-all#readme",
   "devDependencies": {
     "chai": "^4.2.0",
+    "eslint": "^6.0.1",
     "mocha": "^6.1.4"
   }
 }
