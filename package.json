@@ -1,6 +1,6 @@
 {
   "name": "random-all",
-  "version": "1.0.4",
+  "version": "1.0.7",
   "description": "Generates random numbers, unique random numbers.",
   "main": "index.js",
   "scripts": {
@@ -17,7 +17,15 @@
     "unique",
     "random-array",
     "unique-random",
-    "random-objects"
+    "random-objects",
+    "probability",
+    "choice",
+    "weights",
+    "random-char",
+    "random-boolean",
+    "random-int",
+    "random-select",
+    "radom-probability"
   ],
   "author": "m4adan",
   "license": "MIT",
