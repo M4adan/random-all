@@ -112,13 +112,22 @@ npm install --save random-all
   ```
 
 - ### choices(population,weights)
-  Returns a random boolean value.
-  * **population** : Return a random element from the non-empty sequence. 
+ Return a random element from the non-empty sequence according to there weight. 
+  * **population** : elements from which an element should be choosen.
+  * **weights** : weights of each element, the sum should be equal to 100.
   
   ```javascript
     const random = require('random-all')
 
-    let val = random.getBoolean(); Probabilty of true and false is 50
-    let val = random.getBoolean(30); Probabilty of true and false is 30 and 70 repectively.
-
+    let val = random.choices(["a","b","c"],[10,40,60]);// val will be a or b or c, occurence would be based on there weights
+  ```
+- ### setChoices(population,weights)
+ Used to set the elements and there weigts, later used by *choices()*. This is recommeded over passing parameters directly to *choices()*
+  * **population** : elements from which an element should be choosen.
+  * **weights** : weights of each element, the sum should be equal to 100.
+  
+  ```javascript
+    const random = require('random-all')
+    random.setChoices(["a","b","c"],[10,40,60]);
+    let val = random.choices();// val will be a or b or c, occurence would be based on there weights.
   ```
