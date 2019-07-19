@@ -19,11 +19,6 @@ npm install --save random-all
 ```javascript
   const random = require('random-all')
 ```
--  **getUnique(min,max)**
-  Returns a unique random number from (including) `min` to (including) `max`.  After all unique value between min and max it will restart
-  cycle.
-      * **min** : minimum value of random number. Defaults to 1.
-      * **max** : maximum value of random number. Defaults to 100.
 
 - ### getUnique(min,max)
   Returns a unique random number from (including) `min` to (including) `max`.  After all unique value between min and max it will restart
@@ -38,11 +33,6 @@ npm install --save random-all
     let val = random.getUnique()// unique val is between 1 and 100.
 
   ```
-  
--  **getInt(min,max)**
-  Returns a random number from (including) `min` to (including) `max`.
-      * **min** : minimum value of random number. Defaults to 1.
-      * **max** : maximum value of random number. Defaults to 100.
 
 - ### getInt(min,max)
   Returns a random number from (including) `min` to (including) `max`.
@@ -56,10 +46,6 @@ npm install --save random-all
     let val = random.getInt()// val is between 1 and 100.
 
   ```
--  **getFloat(min,max)**
-  Returns a random number from (including) `min` to (including) `max`.
-      * **min** : minimum value of random number. Defaults to 1.
-      * **max** : maximum value of random number. Defaults to 100.
 
 - ### getFloat(min,max)
   Returns a random number from (including) `min` to (including) `max`.
@@ -76,7 +62,7 @@ npm install --save random-all
 
   ```
 
-  - ### getChar(str,isUnique)
+- ### getChar(str,isUnique)
   Returns a random char from string given.
   * **str** : string value from which a random char to be fetched. Defaults to "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789".
   * **isUnique** : Return unique char. 
