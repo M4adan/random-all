@@ -12,32 +12,29 @@ Generates random numbers, unique random numbers
 This is a Node.js module available through the npm registry.
 Installation is done using the npm install command:
 ```markdown
-npm install --save random-all
+  npm install --save random-all
 ```
 
 ## Usage
-```javascript
-  const random = require('random-all')
-```
-
-- ### getUnique(min,max)
-          Returns a unique random number from (including) `min` to (including) `max`.  After all unique value between min and max it will restart
-          cycle.
-          * **min** : minimum value of random number. Defaults to 1.
-          * **max** : maximum value of random number. Defaults to 100.
+  ```javascript
+    const random = require('random-all')
+  ```
+*  **getUnique(min,max)** : Returns a unique random number from (including) `min` to (including) `max`.  
+   After all unique value between min and max it will restart cycle.
+   * **min** : minimum value of random number. Defaults to 1.
+   * **max** : maximum value of random number. Defaults to 100.
           
-          ```javascript
-            const random = require('random-all')
+      ```javascript
+        const random = require('random-all')
 
-            let val = random.getUnique(1,10);// unique val is between 1 and 10.
-            let val = random.getUnique()// unique val is between 1 and 100.
+        let val = random.getUnique(1,10);// unique val is between 1 and 10.
+        let val = random.getUnique()// unique val is between 1 and 100.
 
-          ```
+      ```
 
-- ### getInt(min,max)
-          Returns a random number from (including) `min` to (including) `max`.
-          * **min** : minimum value of random number. Defaults to 1.
-          * **max** : maximum value of random number. Defaults to 100.
+*  **getInt(min,max)** : Returns a random number from (including) `min` to (including) `max`.
+      * **min** : minimum value of random number. Defaults to 1.
+      * **max** : maximum value of random number. Defaults to 100.
           
           ```javascript
             const random = require('random-all')
@@ -47,10 +44,10 @@ npm install --save random-all
 
           ```
 
-- ### getFloat(min,max)
-          Returns a random number from (including) `min` to (including) `max`.
-          * **min** : minimum value of random number. Defaults to 1.
-          * **max** : maximum value of random number. Defaults to 100.
+*  **getFloat(min,max)** : 
+      Returns a random number from (including) `min` to (including) `max`.
+      * **min** : minimum value of random number. Defaults to 1.
+      * **max** : maximum value of random number. Defaults to 100.
   
           ```javascript
             const random = require('random-all')
@@ -62,10 +59,10 @@ npm install --save random-all
 
           ```
 
-- ### getChar(str,isUnique)
-          Returns a random char from string given.
-          * **str** : string value from which a random char to be fetched. Defaults to "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789".
-          * **isUnique** : Return unique char. 
+*  **getChar(str,isUnique)** : 
+      Returns a random char from string given.
+      * **str** : string value from which a random char to be fetched. Defaults to "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789".
+      * **isUnique** : Return unique char. 
   
           ```javascript
             const random = require('random-all')
@@ -85,9 +82,9 @@ npm install --save random-all
 
           ```
 
-- ### getBoolean(percent)
-          Returns a random boolean value.
-          * **percent** : this percent of times true will be returned. Defaults to 50
+*  **getBoolean(percent)** : 
+      Returns a random boolean value.
+      * **percent** : this percent of times true will be returned. Defaults to 50
   
           ```javascript
             const random = require('random-all')
@@ -97,20 +94,20 @@ npm install --save random-all
 
           ```
 
-- ### choices(population,weights)
-          Return a random element from the non-empty sequence according to there weight. 
-          * **population** : elements from which an element should be choosen.
-          * **weights** : weights of each element, the sum should be equal to 100.
+*  **choices(population,weights)** : 
+      Return a random element from the non-empty sequence according to there weight. 
+      * **population** : elements from which an element should be choosen.
+      * **weights** : weights of each element, the sum should be equal to 100.
           
           ```javascript
             const random = require('random-all')
 
             let val = random.choices(["a","b","c"],[10,40,60]);// val will be a or b or c, occurence would be based on there weights
           ```
-- ### setChoices(population,weights)
-          Used to set the elements and there weigts, later used by *choices()*. This is recommeded over passing parameters directly to *choices()*
-          * **population** : elements from which an element should be choosen.
-          * **weights** : weights of each element, the sum should be equal to 100.
+*  **setChoices(population,weights)** : 
+      Used to set the elements and there weigts, later used by *choices()*. This is recommeded over passing parameters directly to *choices()*
+      * **population** : elements from which an element should be choosen.
+      * **weights** : weights of each element, the sum should be equal to 100.
   
           ```javascript
             const random = require('random-all')
