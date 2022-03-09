@@ -25,16 +25,30 @@ describe('Random', function() {
         });
 
         it('random.getUnique(0,9) should return unique values from 0 to 9 and repeat', function() {
+            
         	let arr = [];
-            for (var i = 0; i < 10; i++) {
+            for (let i = 0; i < 10; i++) {
             	let ran = random.getUnique(0,9)
             	expect(arr).to.not.contain(ran);
             	arr[arr.length] = ran;
             }
-            for (var i = 0; i < 10; i++) {
+            for (let i = 0; i < 10; i++) {
             	let ran = random.getUnique(0,9)
             	expect(arr).to.contain(ran);
             }
+        });
+        it.skip('random.getUnique(0,1000000) should return unique values from 0 to 1000000 and repeat', function() {
+            this.timeout(0);
+            let objs = {};
+            for (let i = 0; i <= 1000000; i++) {
+                objs[i] = false;
+            }
+            for (let i = 0; i < 1000000; i++) {
+                let ran = random.getUnique(0,1000000)
+                expect(objs[ran]).to.be.false;
+                objs[ran] = true;
+            }
+            this.timeout(2000);
         });
     });
 
@@ -197,5 +211,38 @@ describe('Random', function() {
             expect((a["5"]/1000)*100).to.be.within(35,45);
             expect((a["8"]/1000)*100).to.be.within(45,55);
         });
+    });
+
+    describe('#new()', function() {
+        it('Calling new() returns new object', function() {
+            let obj1 = random.new();
+            let obj2 = random.new();
+            expect(obj1).to.be.not.equal(obj2)
+        });
+
+        it('getUnique function should have different value in each objects', function() {
+            let obj1 = random.new();
+            let obj2 = random.new();
+            
+            let objs = {};
+            for (let i = 0; i < 10; i++) {
+                objs[i] = false;
+            }
+            for (let i = 0; i < 8; i++) {
+                let ran = obj1.getUnique(1,10)
+                objs[ran] = true;
+            }
+
+            let count = 0;
+            for (let i = 0; i < 10; i++) {
+                let ran = obj2.getUnique(1,10)
+                if(objs[ran]  === true){
+                    ++count
+                }
+            }
+            expect(count).to.be.equal(8);
+        });
+
+        
     });
 });
